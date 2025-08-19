@@ -1,0 +1,14 @@
+// file: ~/certificate-verification-platform/frontend/tsconfig.node.json
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "unresolvedImports": "ignore"
+  },
+  "include": [
+    "vite.config.ts"
+  ]
+}
