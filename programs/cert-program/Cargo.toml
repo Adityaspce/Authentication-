@@ -1,5 +1,5 @@
 [package]
-name = "cert_program"
+name = "cert-program"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
@@ -9,11 +9,14 @@ crate-type = ["cdylib", "lib"]
 name = "cert_program"
 
 [features]
+default = []
+cpi = ["no-entrypoint"]
 no-entrypoint = []
 no-idl = []
-cpi = ["no-entrypoint"]
-default = []
+no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build"]
 
+
 [dependencies]
-anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+anchor-lang = "0.31.1"
+
